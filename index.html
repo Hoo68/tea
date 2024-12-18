@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Sage 茶夫子</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Tea Sage 茶夫子</h1>
+
+    <!-- 首页背景和标题 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Tea Sage 茶夫子</h1>
+            <p>Explore our premium tea collection for health and wellness.</p>
         </div>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="shop.html">商店</a>
-            <a href="about.html">关于我们</a>
-            <a href="contact.html">联系我们</a>
-        </nav>
     </header>
 
-    <section class="product-showcase">
-        <div class="product-card">
-            <img src="images/tea1.jpg" alt="Pu'er Tea Cake">
-            <h3>普洱茶饼</h3>
-            <p>经典普洱，陈年老茶，口感浓郁。</p>
-            <p class="price">¥69</p>
-            <button>立即购买</button>
-        </div>
-        <div class="product-card">
-            <img src="images/tea2.jpg" alt="Herbal Detox Tea">
-            <h3>草本排毒茶</h3>
-            <p>草本植物提取，帮助排毒，恢复活力。</p>
-            <p class="price">¥15</p>
-            <button>立即购买</button>
+    <!-- 产品系列 -->
+    <section class="product-series">
+        <h2>Our Tea Collection</h2>
+        <div class="series-grid">
+            <div class="series-item">
+                <img src="images/tea1.jpg" alt="Tea Series 1">
+                <h3>Herbal Detox</h3>
+            </div>
+            <div class="series-item">
+                <img src="images/tea2.jpg" alt="Tea Series 2">
+                <h3>Pu'er Tea</h3>
+            </div>
+            <div class="series-item">
+                <img src="images/tea3.jpg" alt="Tea Series 3">
+                <h3>Overtime Relief</h3>
+            </div>
         </div>
     </section>
 
+    <!-- 热销产品 -->
+    <section class="top-selling">
+        <h2>Top Selling Products</h2>
+        <div class="top-selling-products">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Pu'er Tea Cake</h3>
+                <p>$69</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Herbal Detox Tea</h3>
+                <p>$15</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Overtime Relief Tea</h3>
+                <p>$20</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部logo和品牌名 -->
     <footer>
-        <p>&copy; 2024 Tea Sage 茶夫子. All rights reserved.</p>
+        <div class="brand-logo">
+            <img src="images/logo.png" alt="Tea Sage Logo">
+            <p>Tea Sage 茶夫子</p>
+        </div>
     </footer>
+
 </body>
 </html>
