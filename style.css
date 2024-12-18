@@ -13,6 +13,42 @@ body {
     font-size: 16px;
 }
 
+/* 导航栏 */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.navbar-logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    font-size: 18px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff7e00;
+}
+
 /* 首页背景 */
 .hero {
     background: url('images/tea-background.jpg') no-repeat center center/cover;
@@ -169,5 +205,10 @@ footer p {
     .product-card {
         width: 80%;
         margin: 10px auto;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
