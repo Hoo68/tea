@@ -1,4 +1,5 @@
 /* Reset and Basic Layout */
+/* Reset and Basic Layout */
 * {
     margin: 0;
     padding: 0;
@@ -13,111 +14,88 @@ body {
     font-size: 16px;
 }
 
-header {
-    background: linear-gradient(to right, #f5b800, #ff7e00);
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo h1 {
-    font-size: 32px;
-    letter-spacing: 2px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #333;
-}
-
-/* Hero Section */
+/* 首页背景 */
 .hero {
-    background: url('images/hero-banner.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
+    background: url('images/tea-background.jpg') no-repeat center center/cover;
     color: white;
+    padding: 100px 20px;
     text-align: center;
+    position: relative;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Product Grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+/* 产品系列部分 */
+.product-series {
     padding: 50px 20px;
+    text-align: center;
+}
+
+.product-series h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.series-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.series-item {
+    width: 200px;
+    text-align: center;
+}
+
+.series-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.series-item h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* 热销产品部分 */
+.top-selling {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.top-selling h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.top-selling-products {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 .product-card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ddd;
-}
-
-.product-card h3 {
-    font-size: 24px;
-    margin: 20px 0;
-    text-align: center;
-    color: #333;
-}
-
-.product-card p {
-    font-size: 16px;
-    margin: 0 20px;
-    text-align: center;
-}
-
-.product-card .price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff7e00;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.product-card button {
-    background-color: #ff7e00;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.product-card button:hover {
-    background-color: #e76b00;
-    transform: scale(1.05);
 }
 
 .product-card:hover {
@@ -125,7 +103,42 @@ header nav a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #ff7e00;
+    margin: 10px 0;
+}
+
+.product-card .btn {
+    display: inline-block;
+    background-color: #ff7e00;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #e76b00;
+    transform: scale(1.05);
+}
+
+/* 底部logo和品牌名 */
 footer {
     background-color: #333;
     color: white;
@@ -133,31 +146,29 @@ footer {
     padding: 20px 0;
 }
 
+.brand-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 footer p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero h2 {
-        font-size: 36px;
+    .series-grid {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr 1fr;
+    .top-selling-products {
+        flex-direction: column;
     }
 
-    .product-card h3 {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
+    .product-card {
+        width: 80%;
+        margin: 10px auto;
     }
 }
