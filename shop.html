@@ -5,52 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop / 商店 | Tea Sage 茶夫子</title>
     <link rel="stylesheet" href="style.css">
+    <script src="shop.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
 <body>
     
     <header>
-        
-       <!-- Navbar / 导航栏 -->
-<div class="navbar">
-    <div class="navbar-logo">
-        <a href="index.html">Tea Sage 茶夫子</a>
-    </div>
-    <ul class="navbar-links">
-        <li><a href="index.html">Home / 首页</a></li>
-        <li><a href="about.html">About / 关于</a></li>
-        <li><a href="shop.html">Products / 产品</a></li>
-        <li><a href="contact.html">Contact / 联系我们</a></li>
-    </ul>
-</div>
-
-        
+        <!-- Navbar / 导航栏 -->
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">Tea Sage 茶夫子</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home / 首页</a></li>
+                <li><a href="about.html">About / 关于</a></li>
+                <li><a href="shop.html">Products / 产品</a></li>
+                <li><a href="contact.html">Contact / 联系我们</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- 商店部分 -->
     <section class="shop">
         <h2>Our Products / 我们的产品</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="images/product1.jpg" alt="Tea Cake / 茶饼">
-                <h3>Tea Cake / 茶饼</h3>
-                <p>Delicious aged tea cake, perfect for any occasion. / 美味的陈年茶饼，适合各种场合。</p>
-                <p class="price">69 Yuan / 69元</p>
-                <a href="#" class="btn">Buy Now / 立即购买</a>
-            </div>
-            <div class="product-card">
-                <img src="images/product3.jpg" alt="Men's Health Tea / 男士养生茶">
-                <h3>Men's Health Tea / 男士养生茶</h3>
-                <p>Support vitality and energy with this nourishing blend. / 增强活力与精力的滋补茶。</p>
-                <p class="price">99 Yuan / 99元</p>
-                <a href="#" class="btn">Buy Now / 立即购买</a>
-            </div>
-             <div class="product-card">
-                <img src="images/product2.jpg" alt="养身调理茶 / 健康茶">
-                <h3>Tea Cake / 茶饼</h3>
-                <p>Well packed small tea-bag. Drink it everyday  /各种身体问题都能通过每天一包茶来慢慢调理。</p>
-                <p class="price">25 Yuan / 25元</p>
-                <a href="#" class="btn">Buy Now / 立即购买</a>
-            </div>
+        <div class="product-grid" id="product-grid">
+            <!-- Product cards will be dynamically inserted here -->
         </div>
     </section>
 
@@ -58,5 +36,6 @@
     <footer>
         <p>&copy; 2024 Tea Sage 茶夫子. All rights reserved. / 版权所有。</p>
     </footer>
+
 </body>
 </html>
