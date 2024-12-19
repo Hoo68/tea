@@ -49,17 +49,18 @@ body {
     color: #ff7e00;
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('images/tea-background.jpg'); /* 确保使用高分辨率图片 */
-    background-size: cover; /* 使图片覆盖整个背景 */
-    background-position: center; /* 让图片在中央对齐 */
-    background-repeat: no-repeat; /* 防止图片重复 */
-    height: 100vh; /* 设置背景区域高度为全屏 */
+    background-image: url('images/tea-background.jpg'); /* Make sure to use a high-resolution image */
+    background-size: cover; /* Ensure image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 100vh; /* Set background height to full screen */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* 确保文字可见 */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* 为文字添加阴影，增强对比度 */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
 }
 
 .hero h1 {
@@ -75,7 +76,7 @@ body {
     margin-right: auto;
 }
 
-/* 产品系列部分 */
+/* Product Series Section */
 .product-series {
     padding: 50px 20px;
     text-align: center;
@@ -99,10 +100,10 @@ body {
 
 .series-item img, .product-card img {
     width: 100%;
-    height: 200px; /* Ensure uniform height */
-    object-fit: cover; /* Ensure the image fits nicely within the set height */
-    border-radius: 10px; /* Match the border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Standardize the shadow */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain proportional scaling of the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .series-item h3 {
@@ -111,7 +112,7 @@ body {
     color: #333;
 }
 
-/* 热销产品部分 */
+/* Top Selling Products Section */
 .top-selling {
     padding: 50px 20px;
     text-align: center;
@@ -145,8 +146,8 @@ body {
 
 .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 200px; /* Ensure uniform height */
+    object-fit: cover; /* Maintain proportional scaling */
 }
 
 .product-card h3 {
@@ -250,7 +251,7 @@ body {
     background-color: #388E3C;
 }
 
-/* About页面样式 */
+/* About Page Styles */
 .about {
     padding: 50px 20px;
     background-color: #fff;
@@ -317,7 +318,7 @@ body {
     }
 }
 
-/* Contact Page Styles / 联系页面样式 */
+/* Contact Page Styles */
 .contact {
     padding: 50px 20px;
     background-color: #fff;
@@ -384,7 +385,7 @@ body {
     background-color: #388E3C;
 }
 
-/* Contact Information Styles / 联系信息样式 */
+/* Contact Information Styles */
 .contact-info {
     margin-top: 50px;
     display: flex;
