@@ -62,7 +62,6 @@ body {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* 为文字添加阴影，增强对比度 */
 }
 
-
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -98,11 +97,12 @@ body {
     text-align: center;
 }
 
-.series-item img {
+.series-item img, .product-card img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Ensure uniform height */
+    object-fit: cover; /* Ensure the image fits nicely within the set height */
+    border-radius: 10px; /* Match the border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Standardize the shadow */
 }
 
 .series-item h3 {
