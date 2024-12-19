@@ -49,14 +49,19 @@ body {
     color: #ff7e00;
 }
 
-/* 首页背景 */
 .hero {
-    background: url('images/tea-background.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
+    background-image: url('images/hero-background.jpg'); /* 确保使用高分辨率图片 */
+    background-size: cover; /* 使图片覆盖整个背景 */
+    background-position: center; /* 让图片在中央对齐 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    height: 100vh; /* 设置背景区域高度为全屏 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* 确保文字可见 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* 为文字添加阴影，增强对比度 */
 }
+
 
 .hero h1 {
     font-size: 48px;
