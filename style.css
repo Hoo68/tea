@@ -395,11 +395,15 @@ body {
 
 .contact-info .info-item {
     text-align: center;
-    max-width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
 }
 
 .contact-info h3 {
-    font-size: 22px;
+    font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
@@ -407,52 +411,4 @@ body {
 .contact-info p {
     font-size: 16px;
     color: #666;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #4CAF50;
-    color: white;
-}
-
-/* 底部logo和品牌名 */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.brand-logo img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-footer p {
-    font-size: 18px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .series-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .top-selling-products {
-        flex-direction: column;
-    }
-
-    .product-card {
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
