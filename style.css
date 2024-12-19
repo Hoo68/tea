@@ -173,6 +173,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Shop Page */
 .shop {
     padding: 20px;
     text-align: center;
@@ -402,23 +403,6 @@ body {
     color: #666;
 }
 
-/* Responsive Design / 响应式设计 */
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        font-size: 14px;
-    }
-}
-
-
 /* Footer */
 footer {
     text-align: center;
@@ -466,4 +450,3 @@ footer p {
         gap: 10px;
     }
 }
-
