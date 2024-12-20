@@ -25,21 +25,24 @@
 
     <!-- Product Details Section -->
     <section class="product-details">
-        <div class="container">
+        <div id="product-detail-container" class="container">
             <div class="product-wrapper">
                 <!-- Product Image -->
                 <div class="product-image">
-                    <img id="product-image" src="images/default-product.jpg" alt="Product Image">
+                    <img id="product-image" src="images/placeholder.png" alt="Product Image">
                 </div>
 
                 <!-- Product Info -->
                 <div class="product-info">
                     <h1 id="product-name">Product Name</h1>
                     <p id="product-description">This is a placeholder description for the product. Detailed information will appear here.</p>
-                    <p class="price" id="product-price">$0.00</p>
+                    <p class="price" id="product-price">Price: $0.00</p>
 
                     <!-- Add to Cart Button -->
-                    <button id="add-to-cart" class="btn">Add to Cart</button>
+                    <button id="add-to-cart" class="btn" aria-label="Add this product to your cart">Add to Cart</button>
+
+                    <!-- Back to Shop Link -->
+                    <a href="shop.html" class="btn-back">Back to Shop</a>
                 </div>
             </div>
         </div>
