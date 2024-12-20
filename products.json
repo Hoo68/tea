@@ -20,4 +20,26 @@
         "price": 49,
         "image": "images/product3.jpg"
     }
+    {
+        "id": "4",
+        "name": "女生月经调理 Women's Menstrual Care Tea",
+        "description": "帮助调节月经周期，缓解不适感，呵护女性健康 Supports menstrual cycle regulation and alleviates discomfort, promoting women's health.",
+        "price": 59,
+        "image": "images/product4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "祛湿茶调理脾胃 Dampness-Relieving Tea",
+        "description": "有效祛湿，调理脾胃，适合男女 Helps reduce dampness and supports spleen and stomach health. Suitable for both men and women.",
+        "price": 49,
+        "image": "images/product5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "送礼茶叶 Gift Tea Set",
+        "description": "高品质茶叶，附送精美茶具，送礼佳选 Premium quality tea with elegant teaware included, perfect for gifting.",
+        "price": 149,
+        "image": "images/product6.jpg"
+    }
+]
 ]
