@@ -178,6 +178,7 @@ body {
     background-color: #e76b00;
     transform: scale(1.05);
 }
+
 /* Customer Reviews Section */
 .customer-reviews {
     padding: 50px 20px;
@@ -439,37 +440,27 @@ body {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: #388E3C;
 }
 
-/* Contact Information Styles */
-.contact-info {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.contact-info .info-item {
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
 }
 
-.contact-info h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+footer p {
+    margin: 10px 0;
 }
 
-.contact-info p {
-    font-size: 16px;
-    color: #666;
+/* Bottom Logo */
+.footer-logo img {
+    width: 150px; /* Reduced size */
+    height: auto;
+    margin-top: 20px;
 }
