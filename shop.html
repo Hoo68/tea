@@ -8,8 +8,9 @@
     <script src="shop.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
+        <!-- Navbar / 导航栏 -->
         <div class="navbar">
             <div class="navbar-logo">
                 <a href="index.html">Tea Sage 茶夫子</a>
@@ -23,59 +24,18 @@
         </div>
     </header>
 
-    <!-- Shop Section -->
-    <div class="shop-container">
-        <!-- Sidebar for Categories -->
-        <aside class="sidebar">
-            <h3>Categories / 分类</h3>
-            <ul class="category-list">
-                <li><a href="#men-health">Men's Health / 男性健康</a></li>
-                <li><a href="#dampness-relief">Dampness Relief / 祛湿</a></li>
-                <li><a href="#overtime-tea">Overtime Tea / 加班茶</a></li>
-                <li><a href="#tea-cakes">Tea Cakes / 茶饼</a></li>
-            </ul>
-        </aside>
+    <!-- 商店部分 -->
+    <section class="shop">
+        <h2>Our Products / 我们的产品</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+    </section>
 
-        <!-- Main Content for Products -->
-        <section class="shop-items">
-            <h2>Our Products / 我们的产品</h2>
-            <div class="product-grid" id="product-grid">
-                <!-- Product cards will be dynamically inserted here -->
-                <div class="product-card" id="men-health">
-                    <img src="product1.jpg" alt="Men's Health Tea">
-                    <h3>Men's Health Tea</h3>
-                    <p class="description">Supports kidney health and reduces night sweats.</p>
-                    <p class="price">69 Yuan</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-                <div class="product-card" id="dampness-relief">
-                    <img src="product2.jpg" alt="Dampness Relief Tea">
-                    <h3>Dampness Relief Tea</h3>
-                    <p class="description">Improves digestion and reduces bad breath.</p>
-                    <p class="price">59 Yuan</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-                <div class="product-card" id="overtime-tea">
-                    <img src="product3.jpg" alt="Overtime Tea">
-                    <h3>Overtime Tea</h3>
-                    <p class="description">Alleviates fatigue and boosts energy.</p>
-                    <p class="price">75 Yuan</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-                <div class="product-card" id="tea-cakes">
-                    <img src="product4.jpg" alt="Tea Cake">
-                    <h3>Tea Cake</h3>
-                    <p class="description">Premium aged tea cakes for traditional tea lovers.</p>
-                    <p class="price">89 Yuan</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
+    <!-- 底部 -->
     <footer>
         <p>&copy; 2024 Tea Sage 茶夫子. All rights reserved. / 版权所有。</p>
     </footer>
+
 </body>
 </html>
