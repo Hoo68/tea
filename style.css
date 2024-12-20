@@ -13,6 +13,48 @@ body {
     font-size: 16px;
 }
 
+
+/* Navigation Bar with Logo */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding for a smaller navbar */
+    height: 60px; /* Fixed height to match logo size */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 100%; /* Ensures logo fits the navbar height */
+    max-height: 50px; /* Prevents the logo from being too large */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links li {
+    font-size: 18px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff7e00;
 /* 导航栏 */
 .navbar {
     background-color: #333;
@@ -463,4 +505,26 @@ footer p {
     width: 50px; /* Reduced size */
     height: auto;
     margin-top: 20px;
+}
+    /* Footer with Logo */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px; /* Fixed height for consistency */
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 100%; /* Matches the footer height */
+    max-height: 50px; /* Ensures the logo isn't too large */
+    margin-right: 10px; /* Optional spacing if text is added */
 }
