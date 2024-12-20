@@ -19,7 +19,7 @@
         "description": "针对你的症状，每日一茶包，20天见效 For small tea bag a day and make you refresh your body in 20 days",
         "price": 49,
         "image": "images/product3.jpg"
-    }
+    },
     {
         "id": "4",
         "name": "女生月经调理 Women's Menstrual Care Tea",
@@ -42,4 +42,4 @@
         "image": "images/product6.jpg"
     }
 ]
-]
+
