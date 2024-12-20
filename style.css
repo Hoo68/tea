@@ -13,15 +13,16 @@ body {
     font-size: 16px;
 }
 
-/* Navigation Bar */
+
+/* Navigation Bar with Logo */
 .navbar {
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    height: 60px;
+    padding: 10px 20px; /* Adjusted padding for a smaller navbar */
+    height: 60px; /* Fixed height to match logo size */
 }
 
 .navbar-logo {
@@ -30,8 +31,9 @@ body {
 }
 
 .navbar-logo img {
-    height: 50px;
-    margin-right: 10px;
+    height: 100%; /* Ensures logo fits the navbar height */
+    max-height: 50px; /* Prevents the logo from being too large */
+    margin-right: 10px; /* Space between logo and text */
 }
 
 .navbar-links {
@@ -53,20 +55,54 @@ body {
 
 .navbar-links a:hover {
     color: #ff7e00;
+/* 导航栏 */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.navbar-logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    font-size: 18px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff7e00;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/tea-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-image: url('images/tea-background.jpg'); /* Make sure to use a high-resolution image */
+    background-size: cover; /* Ensure image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 100vh; /* Set background height to full screen */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
 }
 
 .hero h1 {
@@ -78,7 +114,8 @@ body {
     font-size: 20px;
     margin-top: 10px;
     max-width: 600px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Product Series Section */
@@ -103,10 +140,10 @@ body {
     text-align: center;
 }
 
-.series-item img {
+.series-item img, .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain proportional scaling of the image */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -151,8 +188,8 @@ body {
 
 .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 200px; /* Ensure uniform height */
+    object-fit: cover; /* Maintain proportional scaling */
 }
 
 .product-card h3 {
@@ -167,6 +204,7 @@ body {
 }
 
 .product-card .btn {
+    display: inline-block;
     background-color: #ff7e00;
     color: white;
     padding: 12px 30px;
@@ -191,14 +229,14 @@ body {
 }
 
 .customer-reviews h2 {
-    font-size: 36px;
+    font-size: 2em;
     margin-bottom: 30px;
     color: #333;
 }
 
 .reviews-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
 }
@@ -222,15 +260,166 @@ body {
 }
 
 .review-card h3 {
-    font-size: 18px;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #333;
 }
 
 .review-card .review-comment {
-    font-size: 16px;
+    font-size: 1em;
     color: #555;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Shop Page */
+.shop {
+    padding: 20px;
+    text-align: center;
+}
+
+.shop h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #388E3C;
+}
+
+/* About Page Styles */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-item p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-item {
+        padding: 15px;
+    }
+
+    .about-item h2 {
+        font-size: 24px;
+    }
+
+    .about-item p {
+        font-size: 14px;
+    }
 }
 
 /* Contact Page Styles */
@@ -303,17 +492,39 @@ body {
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Bottom Logo */
+.footer-logo img {
+    width: 50px; /* Reduced size */
+    height: auto;
+    margin-top: 20px;
+}
+    /* Footer with Logo */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px; /* Fixed height for consistency */
+    text-align: center;
 }
 
 .footer-logo {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .footer-logo img {
-    max-height: 50px;
-    margin-right: 10px;
+    height: 100%; /* Matches the footer height */
+    max-height: 50px; /* Ensures the logo isn't too large */
+    margin-right: 10px; /* Optional spacing if text is added */
 }
