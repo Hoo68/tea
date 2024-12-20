@@ -52,16 +52,27 @@ document.addEventListener("DOMContentLoaded", () => {
  * @param {Object} product - The product object containing details.
  */
 function populateProductDetails(product) {
+    // Select elements by their IDs
     const productImage = document.getElementById("product-image");
     const productName = document.getElementById("product-name");
     const productPrice = document.getElementById("product-price");
     const productDescription = document.getElementById("product-description");
 
-    productImage.src = product.image;
-    productImage.alt = product.name;
-    productName.textContent = product.name;
-    productPrice.textContent = product.price;
-    productDescription.textContent = product.description;
+    // Check if elements exist
+    if (!productImage || !productName || !productPrice || !productDescription) {
+        console.error("Some DOM elements are missing. Check your HTML structure.");
+        return;
+    }
+
+    // Populate the elements with product data
+    productImage.src = product.image || "images/placeholder.png"; // Fallback image
+    productImage.alt = product.name || "Product Image";
+    productName.textContent = product.name || "Product Name Not Available";
+    productPrice.textContent = product.price || "Price Not Available";
+    productDescription.textContent = product.description || "Description Not Available";
+
+    // Update the page title dynamically
+    document.title = product.name ? `${product.name} | Tea Sage 茶夫子` : "Product Details";
 }
 
 /**
@@ -70,7 +81,15 @@ function populateProductDetails(product) {
  */
 function displayError(message) {
     const container = document.getElementById("product-detail-container");
-    container.innerHTML = `<p class='error-message'>${message}</p>`;
+    if (!container) {
+        console.error("Product detail container element is missing.");
+        return;
+    }
+
+    container.innerHTML = `
+        <p class='error-message'>${message}</p>
+        <a href="shop.html" class="btn-back">Back to Shop</a>
+    `;
     container.style.textAlign = "center";
     container.style.padding = "20px";
     container.style.color = "red";
