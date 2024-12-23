@@ -43,5 +43,31 @@ const products = [
   }
 ];
 
+const phoneNumber = "601168786888"; // 替换为你的 WhatsApp 号码
+
+// Function to generate product cards with WhatsApp links
+document.addEventListener("DOMContentLoaded", () => {
+  const productList = document.querySelector(".product-list");
+
+  products.forEach(product => {
+    // Create the WhatsApp link
+    const whatsappLink = `https://wa.me/${601168786888}?text=你好，我想购买 Hi would like to buy ${encodeURIComponent(product.name)} (%20${encodeURIComponent(product.description)}%20价格:${product.price}元)。`;
+
+    // Create product card HTML
+    const productCard = `
+      <div class="product">
+        <img src="${product.image}" alt="${product.name}" class="product-image" />
+        <h2>${product.name}</h2>
+        <p>${product.description}</p>
+        <p>价格: ${product.price}元</p>
+        <a href="${whatsappLink}" class="buy-now" target="_blank">Buy Now</a>
+      </div>
+    `;
+
+    // Append product card to the product list
+    productList.innerHTML += productCard;
+  });
+});
+
 // Export the products array for use in other files
 export default products;
