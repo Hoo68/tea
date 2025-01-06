@@ -25,7 +25,7 @@ fetch('products.json')
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
-                <p class="price">${product.price} Yuan / ${product.price}元</p>
+                <p class="price">${product.price} RM / ${product.price}令吉</p>
                 <a href="${whatsappLink}" class="btn" target="_blank">Buy Now / 立即购买</a>
             `;
 
