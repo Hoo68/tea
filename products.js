@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${product.image}" alt="${product.name}" class="product-image" />
         <h2>${product.name}</h2>
         <p>${product.description}</p>
-        <p>价格: ${product.price}元</p>
+        <p>价格: ${product.price}RM</p>
         <a href="${whatsappLink}" class="buy-now" target="_blank">Buy Now</a>
       </div>
     `;
